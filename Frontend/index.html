@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Scenario Generator</title>
+    <link rel="stylesheet" href="rpgstyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Scenario Generator</h1>
+
+        <!-- Input Form -->
+        <div class="input-section">
+            <textarea id="location" placeholder="Tell me about the adventure location" rows="3"></textarea>
+            <textarea id="past-inhabitants" placeholder="Who dwelled there in the past" rows="3"></textarea>
+            <textarea id="current-inhabitants" placeholder="And who resides there now" rows="3"></textarea>
+
+            <label for="rooms">How big is your site:</label>
+            <select id="rooms">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="danger">And how dangerous is it to tread there:</label>
+            <select id="danger">
+                <option value="1">Relatively danger free</option>
+                <option value="2">Watch your backs</option>
+                <option value="3">Not all of you may make it out</option>
+            </select>
+
+            <button id="generateBtn">Generate Adventure Site!</button>
+        </div>
+
+        <!-- Story Display -->
+        <div class="scenario-section hidden">
+            <div id="scenarioOutput"></div>
+            <button id="resetBtn">Try Again</button>
+        </div>
+    </div>
+
+    <script src="formHandleScript.js"></script>
+</body>
+</html>
